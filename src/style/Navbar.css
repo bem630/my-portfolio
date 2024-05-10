@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+}
+.navbar .logo {
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+}
+/*
+.navbar .logo span {
+    color: var(--skin-color);
+}*/
+.navbar .logo a{
+    color: var(--text-black-900);
+    position: relative;
+    padding: 5px 30px;
+}
+.navbar .logo a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+.navbar .logo a::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right li {
+    list-style: none;
+}
+
+.navbar-right li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black-900);
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.navbar-right li a.active {
+    color: var( --skin-color);
+}
+
+.navbar-right li a .icon {
+    margin-right: 8px;
+}
